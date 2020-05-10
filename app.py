@@ -6,6 +6,6 @@ from cdksample.cdksample_stack import CdksampleStack
 
 
 app = core.App()
-CdksampleStack(app, "cdksample", env={'region': 'us-west-2'})
+CdksampleStack(app, "cdksample", env={'region': 'ap-southeast-2'})
 
 app.synth()
