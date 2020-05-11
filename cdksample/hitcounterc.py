@@ -1,7 +1,7 @@
 from aws_cdk import (
     aws_lambda as _lambda,
     aws_dynamodb as ddb,
-    core
+    core,
 )
 
 class HitCounters(core.Construct):
@@ -28,4 +28,7 @@ class HitCounters(core.Construct):
                 'HITS_TABLE_NAME': table.table_name,
             }
         )
+        
+        table.grant_read_write_data(self.handler)
+        downstream.grant_invoke(self.handler)
 

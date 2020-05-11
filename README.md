@@ -1,8 +1,8 @@
 
-# Welcome to your CDK Python project!
+# Sampe CDK App in Python
 
 You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`cdksample_stack`)
-which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
+which contains an API Gateway, Lambda Functions, and DynamoDB resources in Sydney region. API Gateway provides REST API interface for invoking the Lambda Function.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -62,4 +62,3 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
-Enjoy!
